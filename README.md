@@ -8,12 +8,14 @@ Steps:
 
 1. Run Ganache-CLI:
 
-```npx ganache --fork https://mainnet.infura.io/v3/<YOUR_KEY> --unlock 0x1Db3439a222C519ab44bb1144fC28167b4Fa6EE6
+```
+npx ganache --fork https://mainnet.infura.io/v3/<YOUR_KEY> --unlock 0x1Db3439a222C519ab44bb1144fC28167b4Fa6EE6
 
 ```
 
 2. Run the script:
 
-```npx hardhat --network ganache run scripts/deploy.ts
+```
+npx hardhat --network ganache run scripts/deploy.ts
 
 ```
