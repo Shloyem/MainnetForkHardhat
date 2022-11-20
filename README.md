@@ -19,3 +19,6 @@ npx ganache --fork https://mainnet.infura.io/v3/<YOUR_KEY> --unlock 0x1Db3439a22
 npx hardhat --network ganache run scripts/deploy.ts
 
 ```
+
+Recommended output:
+![Recommended output](homework_files/RecommendedOutput.JPG)
