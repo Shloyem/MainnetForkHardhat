@@ -4,7 +4,7 @@ const vitalikAddress = "0x1Db3439a222C519ab44bb1144fC28167b4Fa6EE6"
 
 async function main() {
   const [receiver] = await ethers.getSigners();
-  const vitalikSigner = await ethers.getSigner(vitalikAddress);
+  const vitalikSigner = await ethers.getImpersonatedSigner(vitalikAddress);
 
   const vitalikBalanceBefore = await ethers.provider.getBalance(vitalikAddress);
   const receiverBalanceBefore = await ethers.provider.getBalance(receiver.address);
@@ -13,7 +13,6 @@ async function main() {
 
   const params =
   {
-    from: vitalikAddress,
     to: receiver.address,
     value: ethers.utils.parseEther("6.7").toHexString()
   };
