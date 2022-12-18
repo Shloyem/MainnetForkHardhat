@@ -24,3 +24,10 @@ npx hardhat --network ganache run scripts/deploy.ts
 
 Recommended output:
 ![Recommended output](homework_files/RecommendedOutput.JPG)
+
+Another way to run is using Infura Mainnet Fork with the command:
+
+```
+npx hardhat --network hardhat run scripts/deploy.ts
+
+```
